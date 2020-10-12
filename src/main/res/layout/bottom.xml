@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:background="#ffffff">
+
+
+    <LinearLayout
+        android:id="@+id/chatLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/chatImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#ffffff"
+            android:clickable="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/chat_pick" />
+
+        <TextView
+            android:id="@+id/chatText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pickText"
+            android:clickable="false"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:text="聊天" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/friendsLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/friendsImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#ffffff"
+            android:clickable="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/friends" />
+
+        <TextView
+            android:id="@+id/friendsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nopickText"
+            android:clickable="false"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:text="朋友" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bookLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/bookImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#ffffff"
+            android:clickable="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/book" />
+
+        <TextView
+            android:id="@+id/bookText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nopickText"
+            android:clickable="false"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:text="通讯录" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/settingLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/settingImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#ffffff"
+            android:clickable="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/setting" />
+
+        <TextView
+            android:id="@+id/settingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/nopickText"
+            android:clickable="false"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:text="设置" />
+    </LinearLayout>
+</LinearLayout>
