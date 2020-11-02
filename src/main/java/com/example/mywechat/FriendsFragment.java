@@ -58,6 +58,19 @@ public class FriendsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.friends, container, false);
+        View view = inflater.inflate(R.layout.friends, container, false);
+
+        List<String> data = new ArrayList<>();
+        data.add("messi");
+        data.add("neymar");
+        data.add("james");
+        data.add("cristiano");
+
+        LinearLayoutManager manager = new LinearLayoutManager(getContext());
+        manager.setOrientation(LinearLayoutManager.VERTICAL);
+        RecyclerView rv = view.findViewById(R.id.recycleView);
+        rv.setLayoutManager(manager);
+        rv.setAdapter(new MyAdapter(data));
+        return view;
     }
 }
